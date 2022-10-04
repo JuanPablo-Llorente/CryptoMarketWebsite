@@ -6,6 +6,3 @@ package-lock.json
 
 # Environment variables
 .env
-
-# Personal info
-info

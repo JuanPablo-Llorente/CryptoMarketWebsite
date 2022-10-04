@@ -1,0 +1,187 @@
+.Container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #171b26fb;
+}
+
+.ContentContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.TextContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 330px;
+    margin-top: 30px;
+    width: 310px;
+}
+
+.Title
+{
+    width: 100%;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+}
+
+.Text
+{
+    width: 100%;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    font-weight: 400;
+}
+
+.SecondText
+{
+    width: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    font-weight: 300;
+}
+
+.DownloadButton
+{
+    height: 37px;
+    width: 280px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    background: none;
+    border: 2px solid #aab6e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.DownloadButton a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.DownloadButton:hover
+{
+    background: #aab6e0;
+}
+
+.DownloadButton:hover a
+{
+    color: #171b26;
+}
+
+.WarningText
+{
+    width: 300px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.ScreenshotsContainer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+}
+
+.Screenshots
+{
+    max-height: 570px;
+    margin-right: 70px;
+}
+
+@media (max-width: 768px)
+{
+    .Container
+    {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .TextContainer
+    {
+        align-items: center;
+    }
+    .Title
+    {
+        text-align: center;
+    }
+    .Text
+    {
+        text-align: center;
+    }
+    .SecondText
+    {
+        text-align: center;
+    }
+    .ScreenshotsContainer
+    {
+        justify-content: flex-end;
+    }
+    .Screenshots
+    {
+        max-height: 550px;
+    }
+}
+
+@media (max-width: 520px)
+{
+    .Container
+    {
+        overflow: hidden;
+    }
+    .ScreenshotsContainer
+    {
+        width: 400px;
+    }
+    .Screenshots
+    {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .TextContainer
+    {
+        transform: scale(0.9);
+    }
+    .ScreenshotsContainer
+    {
+        width: 300px;
+        justify-content: flex-start;
+    }
+    .Screenshots
+    {
+        max-height: 400px;
+        margin-left: 20px;
+    }
+}
