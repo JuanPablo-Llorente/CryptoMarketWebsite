@@ -126,6 +126,10 @@
         height: 100%;
         width: 100%;
     }
+    .ContentContainer
+    {
+        margin-top: -70px;
+    }
     .TextContainer
     {
         align-items: center;
